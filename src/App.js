@@ -17,13 +17,13 @@ const App = () => {
   );
 };
 
-const Pet = (props) => {
+const Pet = ({ name, animal, breed }) => {
   return React.createElement(
     "div",
     undefined,
-    React.createElement("h1", undefined, props.name),
-    React.createElement("h2", undefined, props.animal),
-    React.createElement("h2", undefined, props.breed)
+    React.createElement("h1", undefined, name),
+    React.createElement("h2", undefined, animal),
+    React.createElement("h2", undefined, breed)
   );
 };
 
