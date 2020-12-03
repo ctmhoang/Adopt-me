@@ -1,3 +1,6 @@
+import React from "react";
+import { render } from "react-dom";
+import Pet from "./Pet";
 const App = () => {
   return React.createElement(
     "div", // tags name kind of component ?
@@ -17,17 +20,7 @@ const App = () => {
   );
 };
 
-const Pet = ({ name, animal, breed }) => {
-  return React.createElement(
-    "div",
-    undefined,
-    React.createElement("h1", undefined, name),
-    React.createElement("h2", undefined, animal),
-    React.createElement("h2", undefined, breed)
-  );
-};
-
-ReactDOM.render(
+render(
   React.createElement(App), // Or use a composite component
   document.getElementById("root")
 );
